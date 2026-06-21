@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Posts</title>
+
+</head>
+<body>
+    <h1>Список постів: </h1>
+    {% for post in hosts %}
+    <div>
+
+        <h2>{{post.title}}</h2>
+        <p>{{post.published_date}}</p>
+
+    </div>
+    {% empty %}
+    <p>Постів немає</p>
+    {% endfor %}
+
+</body>
+</html>
